@@ -51,7 +51,7 @@ public class PlayScreen implements Screen {
         terminal.write("Some gameplay", 1, 1);
         terminal.write("--Press [Enter] to win or [Escape] to lose --", 22, 22);
         int left = getScrollX();
-        int top = getScrollX();
+        int top = getScrollY();
         displayWorld(terminal, left, top);
         terminal.write('X', centerWidth - left, centerHeight - top);
     }
